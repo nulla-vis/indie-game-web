@@ -1,0 +1,177 @@
+body{
+    background-color: #FEFFB3;
+    /* background-color: #eee; */
+}
+.navbar {
+    background: #131313;
+    padding: 0.2rem 8rem;
+    /* z-index: 1000; */
+}
+
+.navbar .navbar-brand img{
+    max-height: 35px;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 0 0.8rem;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover {
+    color: #E2D63B;
+}
+
+.mid {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.mid video {
+    margin-top: 52px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Jumbotron */
+.jumbotron {
+    border-top: 3px solid orange;
+    border-bottom: 3px solid orange;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.9) 100%), url(https://img.itch.zone/aW1nLzUwNjUxMTEuanBn/original/Ig3Gp3.jpg);
+    background-size: cover;
+    height: 740px;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.jumbotron .display-4 {
+    /* font-family: 'DotGothic16', sans-serif; */
+    color: white;
+    text-align: center;
+    margin-top: 400px;
+    font-size: 31px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.jumbotron .lead {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    font-size: 16px;
+    text-align: center;
+}
+
+.jumbotron h6 {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Carouser */
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition-duration: 1s;
+    transition-property: opacity;
+}
+
+.carousel-item img {
+    margin: 20px auto;
+    height: 400px;
+    width: 375px;
+}
+
+.carousel-control-prev {
+    width: 70px;
+    left: 35px;
+}
+
+.carousel-control-next {
+    width: 70px;
+    right: 35px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('/assets/images/previous.png');
+    height: 25px;
+    width: 25px;
+}
+   
+.carousel-control-next-icon {
+    background-image: url('/assets/images/next.png') !important;
+    height: 25px;
+    width: 25px;
+} 
+
+.carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon { 
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s; 
+}
+.carousel:hover .carousel-control-prev-icon, .carousel:hover .carousel-control-next-icon { 
+    visibility: visible;
+    opacity: 1
+}
+
+
+
+/* Desktop version */
+@media (min-width: 992px) {
+
+    .jumbotron {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.9) 100%), url(https://img.itch.zone/aW1nLzUwNjUzMzIuanBn/original/OjN7Ry.jpg);
+    }
+    .jumbotron .display-4 {
+        font-size: 62px;
+    }
+
+    .jumbotron .lead {
+        font-size: 20px;
+    }
+    
+    .jumbotron h6 {
+        font-size: 20px;
+    }
+
+    .carousel-item img {
+        margin: 20px auto;
+        height: 500px;
+        width: 900px;
+    }
+    
+    .carousel-control-prev {
+        width: 70px;
+        left: 100px;
+    }
+    
+    .carousel-control-next {
+        width: 70px;
+        right: 100px;
+    }
+    
+    .carousel-control-prev-icon {
+        background-image: url('/assets/images/previous.png');
+        height: 30px;
+        width: 30px;
+    }
+       
+    .carousel-control-next-icon {
+        background-image: url('/assets/images/next.png') !important;
+        height: 30px;
+        width: 30px;
+    } 
+}
+
+
+
+
+
